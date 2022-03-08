@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그림자 만들기</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        html,body {
+            color: #333;
+        }
+        div dl {
+            display: inline-block;
+            width: 300px;
+            border: 2px dotted red; /* 테두리 두께 점선 색상 */
+            padding: 30px;
+            box-sizing: border-box;
+            margin: 20px;
+            /* 그림자: x축 y축 흐림(퍼지는 정도) 색상 */
+            box-shadow: 10px 30px 20px rgba(51, 51, 51, 0.62);
+        }
+        div dl:nth-of-type(2) {
+            box-shadow: -10px -20px 20px rgba(0, 0, 0, 0.62);
+        }
+        div dl:nth-of-type(3) {
+            box-shadow: inset 10px 20px 20px rgba(0, 0, 0, 0.62);
+        }
+        div dl:nth-of-type(4) {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.62);
+        }
+        p{
+            width: 120px;
+            height: 36px;
+            line-height: 36px;
+            background-color: #004fff;
+            color: #fff;
+            text-align: center;
+            margin: 20px;
+            border-radius: 7px;
+            box-shadow: 0px 5px 13px rgba(0,79,255,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <dl>
+            <dt>title</dt>
+            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Autem temporibus et id iste eligendi placeat explicabo, 
+                aliquid, ea quas quaerat minus unde praesentium. 
+                Esse aspernatur ex ipsam veritatis distinctio labore!</dd>
+        </dl><!-- 1 -->
+        <dl>
+            <dt>title</dt>
+            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Autem temporibus et id iste eligendi placeat explicabo, 
+                aliquid, ea quas quaerat minus unde praesentium. 
+                Esse aspernatur ex ipsam veritatis distinctio labore!</dd>
+        </dl><!-- 2 --><dl>
+            <dt>title</dt>
+            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Autem temporibus et id iste eligendi placeat explicabo, 
+                aliquid, ea quas quaerat minus unde praesentium. 
+                Esse aspernatur ex ipsam veritatis distinctio labore!</dd>
+        </dl><!-- 3 --><dl>
+            <dt>title</dt>
+            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Autem temporibus et id iste eligendi placeat explicabo, 
+                aliquid, ea quas quaerat minus unde praesentium. 
+                Esse aspernatur ex ipsam veritatis distinctio labore!</dd>
+        </dl><!-- 4 -->
+    </div>
+    <p>멤버십</p>
+</body>
+</html>

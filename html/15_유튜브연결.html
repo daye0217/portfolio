@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유튜브연결</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .youtube_list {
+            width: 1000px;
+            background-color: yellowgreen;
+            margin: 50px auto;
+        }
+        .youtube_list .youtube {
+            padding-bottom: 56.25%;
+            /* 화면 16:9 비율 */
+            width: 100%;
+            position: relative;
+        }
+        .youtube_list .youtube iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="youtube_list">
+        <div class="youtube">
+            <!-- 유튜브 연결 -->
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/DkXvif19ffg" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div><!-- .youtube end -->
+    </div><!-- .youtube_list end -->
+</body>
+</html>
